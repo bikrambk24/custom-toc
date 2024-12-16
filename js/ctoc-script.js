@@ -13,17 +13,15 @@ jQuery(document).ready(function($) {
         var $h3List = $h2Item.children('.ctoc-h3-list');
         var $toggle = $(this).find('.ctoc-toggle');
 
-        // Remove 'active' class from all links and their parent .ctoc-h2
         $('.ctoc-h2-link').removeClass('active');
         $('.ctoc-h2').removeClass('active');
 
-        // Add 'active' class to the clicked .ctoc-h2-link and its parent .ctoc-h2
         $(this).addClass('active');
-        $h2Item.addClass('active'); // Adding 'active' class to the parent .ctoc-h2
+        $h2Item.addClass('active');
 
-        // If a toggle exists, slide the H3 list, else scroll to target
+        
         if ($toggle.length) {
-            e.stopPropagation(); // Prevent scrolling if toggle is clicked
+            e.stopPropagation();
             $h3List.slideToggle();
             $toggle.text($toggle.text() === '+' ? '−' : '+');
         } else {
