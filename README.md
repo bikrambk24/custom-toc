@@ -1,0 +1,1 @@
+This is a lightweight WordPress plugin that automatically generates a Table of Contents (TOC) for posts and custom post types using <h2> and <h3> headings. Perfect for improving navigation and user experience on long-form content.
